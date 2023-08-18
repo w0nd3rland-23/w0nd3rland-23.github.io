@@ -1,0 +1,174 @@
+/* z-index order */
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+  
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+:root{
+  --col-01:#ffffff;
+  --col-02:#000000;
+  --col-03:#773fc6;
+  --col-04:#b6e878;
+  --border: 5px solid var(--col-03);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+
+  color: var(--col-02);
+  padding: 2vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  gap:0.5rem;
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  border-radius: 25px;
+  padding-top: 2rem ;
+  padding-bottom: 2rem ;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+}
+
+.FilterSection{
+padding:1rem;
+font-size: 1.15em;
+
+}
+
+.FilterBox{
+
+}
+
+.FilterButton{
+  background-color: #773fc6; 
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+}
+/* 
+  this class will be applied to the last filter button clicked - remember because it's below .FilterButton it will overwrite
+  any duplicate properties
+*/
+.SelectedFilter{
+  background-color: rgb(177, 29, 170);
+}
+
+.RecipeLink{
+
+}
+
+.RecipeName{
+
+}
+
+.Author{
+
+}
+
+.RecipeImageContainer{
+
+}
+
+.RecipeImg{
+
+}
+
+.Attribution{
+
+}
+
+.Publisher{
+
+}
+
+.Cuisine{
+
+}
+
+.TimeToCook{
+
+}
+
+.SkillLevel{
+
+}
+
+.Course{
+
+}
+
+.Servings{
+
+}
+
+.Dietary{
+
+}
+
+.DatePublished{
+
+}
+
+.DateUpdated{
+
+}
+
+.SpecialEquipment{
+
+}
+
+/* Fonts */
+h1{
+  font-family: 'Rubik';
+  background-color: #773fc6;
+  color:white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+h3{
+  font-family: 'Rubik';
+
+ 
+}
+
+p{
+  font-family: 'Rubik';
+}
+
+div{
+  font-family: 'Rubik';
+}
+
+a{
+  color: #773fc6; 
+}
+
+img{
+  padding-top: 1rem;
+
+}
